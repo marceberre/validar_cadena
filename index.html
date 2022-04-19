@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Enlazo mi archivo de estilos -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>VALIDAR CON JAVASCRIPT</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <label for="nombre"
+        >Nombre: <input id="nom" onkeyup="chequear()" type="text" autofocus />
+        <i id="okis" class="fa-solid fa-check"></i>
+        <i id="error" class="fa-solid fa-xmark"></i>
+      </label>
+      <br /><br />
+      <span>El nombre se valiará cuando tenga 6 o más caracteres</span>
+      <br />
+      <div id="mensaje"></div>
+    </div>
+
+    <!-- Enlazo mi archivo de Javascript -->
+    <script src="main.js"></script>
+  </body>
+</html>
